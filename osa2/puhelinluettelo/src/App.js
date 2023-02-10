@@ -119,6 +119,7 @@ const App = () => {
             setPersons(persons.filter(person => person.id !== personObject.id))
             setNewName('')
             setNewNumber('')
+            console.log(error.response.data)
           }
         )
       }
@@ -155,6 +156,7 @@ const App = () => {
       .catch(error => {
         errorContent(`Information of ${id} has already been removed from server`)
         setPersons(persons.filter(person => person.id !== id))
+        console.log(error.response.data)
       }
     )
   }

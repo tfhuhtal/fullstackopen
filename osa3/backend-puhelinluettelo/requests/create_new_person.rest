@@ -1,0 +1,7 @@
+POST https://wandering-sun-6412.fly.dev/api/persons
+Content-Type: application/json
+
+{
+  "name": "Artoo Hllas",
+  "number": "040-123456"
+}
